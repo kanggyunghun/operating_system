@@ -18,7 +18,7 @@ int main()
 	memset(buf, 0x00, 255);
 	while(1)
 	{
-		while(fget(buf,255,fp) != NULL){
+		while(fgets(buf,255,fp) != NULL){
 		printf("%s\n", buf);
 		memset(buf, 0x00, 255);
 		}
